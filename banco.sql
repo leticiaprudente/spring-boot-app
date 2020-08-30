@@ -1,5 +1,7 @@
 drop database lab5;
 create database lab5;
+create schema lab5;
+
 
 use lab5;
 
