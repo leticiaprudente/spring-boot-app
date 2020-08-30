@@ -1,9 +1,11 @@
-drop database lab5;
-create database lab5;
 create schema lab5;
 
-
 use lab5;
+
+create user 'user'@'appUsr' identified by 'senha1234';
+
+grant select, insert, delete, update on lab5.* to user@'appUsr';
+
 
 CREATE TABLE cli_cliente(
 	cli_id BIGINT NOT NULL AUTO_INCREMENT,
